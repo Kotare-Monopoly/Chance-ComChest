@@ -6,7 +6,6 @@ class CommunityCard < ActiveRecord::Base
   end
 
   def convert_JSON
-    p self
     parsable_card = {
       moveType: self.move_type,
       moveValue: self.move_value,

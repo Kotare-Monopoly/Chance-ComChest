@@ -13,16 +13,15 @@ describe 'GET api/v0.1/community-card' do
       other_players_money_change: 5
     })
     sample_card.save!
+    get '/api/v0.1/community-card'
   end
 
   it 'has a response HTTP status code 200' do
-    get '/api/v0.1/community-card'
     expect(last_response.status).to eq(200)
   end
 
   it 'returns valid JSON' do
-    get '/api/v0.1/community-card'
-    expect(last_response.body).to include("move: ")
+    expect(last_response.body).to include("\"moveType\":")
   end
 
   # describe 'returns correct JSON' do
