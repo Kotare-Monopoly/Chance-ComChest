@@ -13,7 +13,7 @@ describe 'GET api/v0.1/community-card' do
 
   it 'returns valid JSON' do
     get '/api/v0.1/community-card'
-    expect(last_response.body).to include("move:")
+    expect(last_response.body).to include("move: ")
   end
 
   # describe 'returns correct JSON' do

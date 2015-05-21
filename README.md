@@ -7,7 +7,8 @@ Description: to serve card effects
 
 response JSON
 {
-  move: none / {relative: -4} / {toSquare: 7},
+  moveType: none || relative || toSquare
+  moveValue: 0   || -4       || 23
   currentPlayerMoneyChange: -10
   otherPlayerMoneyChange: 5
 }
@@ -19,7 +20,8 @@ Description: to serve card effects
 
 response JSON
 {
-  move: none / {relative: -4} / {toSquare: 7},
+  moveType: none || relative || toSquare
+  moveValue: 0   || -4       || 23
   currentPlayerMoneyChange: -10
   otherPlayerMoneyChange: 5
 }
