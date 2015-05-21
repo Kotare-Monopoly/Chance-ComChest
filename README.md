@@ -7,9 +7,10 @@ Description: to serve card effects
 
 response JSON
 {
-  moveType: none || relative || toSquare
-  moveValue: 0   || -4       || 23
-  currentPlayerMoneyChange: -10
+  description: "sample chance card",
+  moveType: 'none' || 'relative' || 'toSquare',
+  moveValue: 0   || -4       || 23,
+  currentPlayerMoneyChange: -10,
   otherPlayerMoneyChange: 5
 }
 
@@ -20,8 +21,9 @@ Description: to serve card effects
 
 response JSON
 {
-  moveType: none || relative || toSquare
-  moveValue: 0   || -4       || 23
-  currentPlayerMoneyChange: -10
+  description: "sample community card",
+  moveType: 'none' || 'relative' || 'toSquare',
+  moveValue: 0   || -4       || 23,
+  currentPlayerMoneyChange: -10,
   otherPlayerMoneyChange: 5
 }
