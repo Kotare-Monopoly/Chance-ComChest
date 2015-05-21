@@ -1,5 +1,9 @@
-require 'spec_helper'
+# require 'spec_helper'
 
-describe '' do
-  pending "add some examples to (or delete) /Users/greatbanksesther/Desktop/Chance-ComChest/Rakefile"
-end
+# describe 'CommunityCard' do
+#   describe '#self.get_card' do
+#     it 'returns JSON of card' do
+
+#     end
+#   end
+# end

@@ -9,7 +9,7 @@ response JSON
   moveType: 'none' || 'relative' || 'toSquare',
   moveValue: 0   || -4       || 23,
   currentPlayerMoneyChange: -10,
-  otherPlayerMoneyChange: 5
+  otherPlayersMoneyChange: 5
 }
 
 
@@ -23,5 +23,5 @@ response JSON
   moveType: 'none' || 'relative' || 'toSquare',
   moveValue: 0   || -4       || 23,
   currentPlayerMoneyChange: -10,
-  otherPlayerMoneyChange: 5
+  otherPlayersMoneyChange: 5
 }

@@ -4,7 +4,16 @@ describe 'GET api/v0.1/community-card' do
   # it 'picks a random card' do
 
   # end
-
+  before do
+    sample_card = CommunityCard.new({
+      description: "sample community card",
+      move_type: 'relative',
+      move_value: 4,
+      current_player_money_change: -10,
+      other_players_money_change: 5
+    })
+    sample_card.save!
+  end
 
   it 'has a response HTTP status code 200' do
     get '/api/v0.1/community-card'
@@ -33,4 +42,7 @@ describe 'GET api/v0.1/community-card' do
   #     end
   #   end
   # end
+  after do
+    CommunityCard.destroy_all
+  end
 end
