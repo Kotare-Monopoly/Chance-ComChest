@@ -190,7 +190,7 @@ chance_cards_params = [
     move_value: 0,
     current_player_money_change: 50,
     other_players_money_change: 0
-  },
+  }
 ]
 
 community_cards_params.each do |params|
