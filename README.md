@@ -1,5 +1,7 @@
 Serves community & chance cards
 
+https://chance-comchest.herokuapp.com/api/v0.1/community-card
+
 GET /api/v0.1/chance-card
 Description: to serve card effects
 
