@@ -17,6 +17,7 @@ require 'logger'
 
 require 'sinatra'
 require "sinatra/reloader" if development?
+require 'sinatra/cross_origin'
 
 require 'erb'
 
@@ -35,6 +36,14 @@ configure do
 
   # Set the views to
   set :views, File.join(Sinatra::Application.root, "app", "views")
+
+  #set all routes to accept cross origin requests
+  enable :cross_origin
+  set :allow_origin, :any 
+  set :allow_methods, [:get, :options]
+  set :allow_credentials, true
+  set :max_age, "1728000"
+  set :expose_headers, ['Content-Type']
 end
 
 # Set up the controllers and helpers
